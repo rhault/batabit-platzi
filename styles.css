@@ -1,0 +1,75 @@
+:root{
+    --bitcoin-orange: #F7931A;
+    --just-white: #FFFFFF;
+    --soft-orange: #FFE9D4;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+header{
+    background: linear-gradient(228deg, #201E1C 11.19%, #F7931A 100%);    
+    display: flex;
+    flex-direction: column;
+    height: 334px;
+    justify-content: center;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+header img{
+    align-self: center;
+    height: 24px;
+    margin-top: 60px;
+    width: 150px;
+}
+
+.header--title-container{
+    align-self: center;
+    height: 218px;
+    max-width: 900px;
+    min-width: 288px;
+    margin-top: 25px;
+    width: 90%;
+}
+
+.header--title-container h1{
+    color: var(--just-white);
+    font-size: 24px;
+    font-weight: 700px;
+    line-height: 26px;
+}
+
+.header--title-container p{
+    color: var(--soft-orange);
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 18px;
+    margin-top: 25px;
+}
+
+.header--botton{
+    background-color: var(--just-white);
+    color: var(--warm-black);
+    font-size: 14px;    
+    margin-top: 25px;
+    padding: 12px 16px;
+}
+
