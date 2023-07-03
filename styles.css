@@ -52,24 +52,105 @@ header img{
 
 .header--title-container h1{
     color: var(--just-white);
-    font-size: 24px;
-    font-weight: 700px;
-    line-height: 26px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
 }
 
 .header--title-container p{
     color: var(--soft-orange);
-    font-size: 14px;
-    font-weight: 500px;
-    line-height: 18px;
-    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-top: 40px;
 }
 
-.header--botton{
+.header--title-container .header--botton{
     background-color: var(--just-white);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
     color: var(--warm-black);
-    font-size: 14px;    
+    cursor: pointer;
+    display: block;
+    font-family: 'DM Sans';
+    font-size: 1.4rem;
+    font-weight: bold;
+    left: calc(50% - 113px);
     margin-top: 25px;
     padding: 12px 16px;
+    position: absolute;
+    text-decoration: none;
+    top: 287px;
 }
 
+.header--title-container .header--botton span{
+    background-image: url('./assets/icons/arrow_down.png');
+    display: inline-block;
+    height: 16px;
+    width: 22px;
+}
+
+.section--info{
+    background-color: var(--off-white);
+}
+
+.section--table{
+    display: grid;
+    grid-column-gap: .2rem;
+    grid-row-gap: .2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 20px;
+}
+
+.section--table .section--title{
+    background-color: transparent;
+    color: var(--bitcoin-orange);
+    font-family: 'DM Sans';
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section--table > div{
+    background-color: var(--just-white);
+    font-family: 'Inter';
+    letter-spacing: -0.32px;
+    padding: 1rem 1.2rem;
+}
+
+.section--table .cryto{
+    color: #B5B0AC;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.section--table .price{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 11px 12px;
+}
+
+.section--table .price > p{
+    color: #757575;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section--table div:nth-child(n of .border-top){
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.section--table div:nth-child(n of .border-bottom) {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.section--table .arrow-down{
+    background-image: url('./assets/icons/trending-down.png');
+    display: inline-block;
+    height: 10px;
+    width: 12px;
+}
