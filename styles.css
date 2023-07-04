@@ -106,7 +106,13 @@ main{
 }
 
 .background-bitcoin{
-    margin: 40px 0;
+    background-image: url('./assets/imgs/bitcoin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin: 40px auto;
+    width: 200px;
 }
 
 .main--exchange-container-title{
