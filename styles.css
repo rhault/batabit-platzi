@@ -22,6 +22,7 @@ html{
     font-size: 62.5%;
 }
 
+/* Containers */
 header{
     background: linear-gradient(228deg, #201E1C 11.19%, #F7931A 100%);    
     display: flex;
@@ -90,13 +91,15 @@ header img{
     width: 22px;
 }
 
+/* Main */
 main{
     background-color: var(--off-white);
     height: auto;
     width: 100%;
 }
 
-.exchange-container{
+/* Containers Sections */
+.exchange-container, .details-container{
     height: auto;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -105,6 +108,7 @@ main{
     width: 100%;
 }
 
+/* Exchange Section */
 .background-bitcoin{
     background-image: url('./assets/imgs/bitcoin.svg');
     background-position: center;
@@ -219,7 +223,6 @@ main{
     width: 12px;
 }
 
-
 .exchange-container__date{
     background-color: var(--soft-orange);
     border-radius: 8px;
@@ -231,4 +234,65 @@ main{
     padding: 8px;
     text-align: center;
     width: 70%;
+}
+
+/* Details Section */
+
+.details-container{
+    background-color: var(--warm-black);
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans';
+    row-gap: 16px;
+}
+
+.details-container .details-container__title{
+    align-self: center;
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 64px;
+    width: 90%;
+}
+
+.details-container .details-container__caption{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 32px;
+    padding-top: 24px;
+}
+
+.details-item {
+    align-self: center;
+    background-color: var(--warm-black-1);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    height: 152px;
+    text-align: start;
+    width: 90%;
+}
+
+.details-item .details-item__icon {
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.details-item .details-item__title{
+    color: var(--just-white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.details-item .details-item__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-top: 10px;
+    text-align: justify;
+    width: 252px;
 }
