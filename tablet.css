@@ -4,6 +4,14 @@
     column-gap: 15px;
     justify-content: center;
     margin: 0 auto;
+    width: 950px;
 }
 
+.exchange-table{
+    overflow-x: hidden;
+}
 
+.plans-container__slider{
+    justify-content: center;
+    overflow-x: hidden;
+}

@@ -141,33 +141,44 @@ main{
     width: 80%;
 }
 
-.table-coin{
-    display: grid;
-    font-family: 'DM Sans';
-    grid-column-gap: .2rem;
-    grid-row-gap: .2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+.exchange-table{
+    display: flex;
+    gap: 55px;
+    margin: 0 auto;
+    padding: 0 50px;
+    overscroll-behavior-x: contain;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    max-width: 930px
+}
+
+.table-coin, .table-commissions{
+    font-family: 'Inter';
+    letter-spacing: -0.32px;
     margin: 24px auto;
     min-width: 235px;
     max-width: 500px;
     width: 260px;
+    scroll-snap-align: center;
+}
+
+.table-container{
+    display: grid;
+    font-family: 'DM Sans';
+    gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .exchange-table .exchange-table__title{
-    background-color: transparent;
     color: var(--bitcoin-orange);
-    grid-column-start: 1;
-    grid-column-end: 3;
     font-weight: 700;
     font-size: 1.8rem;
-    text-align: start;
+    margin-bottom: 15px;
 }
 
-.exchange-table > div{
-    font-family: 'Inter';
-    letter-spacing: -0.32px;
-    padding: 1rem 1.2rem;
+.exchange-table .table-commissions .exchange-table__title{
+    color: var(--secondary-blue);
 }
 
 .exchange-table .cryto{
@@ -177,7 +188,7 @@ main{
     font-size: 1.6rem;
     font-weight: 700;
     padding-left: 6px;
-    padding-top: 12px;
+    padding-top: 8px;
     text-align: left;
 }
 
@@ -185,7 +196,8 @@ main{
     align-items: center;
     background-color: var(--just-white);
     display: flex;
-    justify-content: space-evenly;
+    gap: 5px;
+    justify-content: center;
     padding: 11px 12px;
 }
 
@@ -230,13 +242,19 @@ main{
     background-color: var(--soft-orange);
     border-radius: 8px;
     color: var(--warm-black);
+    grid-column-start: 1;
+    grid-column-end: 3;
     font-family: 'Inter';
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 8px;
     text-align: center;
-    width: 200px;
+    width: 100%;
+}
+
+.table-commissions .exchange-container__date{
+    background-color: var(--soft-blue);
 }
 
 /* Details Section */
@@ -288,6 +306,7 @@ main{
     color: var(--just-white);
     font-size: 1.8rem;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .details-item .details-item__text {
@@ -320,11 +339,6 @@ main{
 
 /* Plan Section */
 
-.plans-container__slider{
-    display: flex;
-    gap: 10px
-}
-
 .plans-container{
     padding-bottom: 24px;
 }
@@ -347,21 +361,22 @@ main{
     color: #757575;
     font-size: 1.4rem;
     padding-top: 24px;
-    
 }
 
 .plans-container__slider{
     display: flex;
+    gap: 87px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    padding: 0 82px;
 }
 .plans-container .plans-container__card{
     border-radius: 8px;
     box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
     font-family: 'Inter';
     height: 265px;
-    margin: 60px auto;
+    margin: 60px 30px;
     min-width: 190px;
     max-width: 250px;
     text-align: center;
